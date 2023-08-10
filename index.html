@@ -10,27 +10,90 @@
 			<title>Payment Form Bootstrap</title>
 		</head>
 		<body>
-			<div class="container ">
-				<div class="card" style="width: 180rem;">
+			<div class="container justify-content-center">
+				<div class="card" style="width: 1000px;">
 					<form>
-						<div class="card-header">Payment form example</div>
+						<div class="card-header"><strong>Payment form example</strong> </div>
 							<div class="card-body">
-							<div class="mb-3">
-							<label for="exampleInputEmail1" class="form-label">Email address</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-							<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+								<div class="alert alert-danger" role="alert">
+									Some fields are missing
+								</div>
+								<div class="row  mt-4 mx-3  ">
+									<div class="col-5">    
+										<label for="card" class="form-label fw-bold"">Card #</label>
+										<input type="Text" name="card" placeholder="XXXXXXXXXXXXXXXX" class="form-control">
+									</div>
+									<div class="col-3 ">    
+										<label for="cvc" class="form-label fw-bold">CVC#</label>
+										<input type="Text" name="cvc" placeholder="0000" class="form-control">
+									</div>
+									<div class="col-4 fw-bold ">    
+										<label for="amount" class="form-label">Amount</label>
+										<div class="d-flex">
+											<p>$</p> 
+											<input type="Text" id="amount"placeholder="Amount" class="form-control" >
+										</div>
+									</div>
+								</div>
+								<div class="row  mt-4 mx-3" >   
+									<div class="col-6">
+										<label for="amount" class="form-label fw-bold">First Name</label>
+										<input type="Text" id="amount"placeholder="" class="form-control" >
+									</div>
+									<div class="col-6">
+										<label for="amount" class="form-label fw-bold">Last Name </label>
+											<input type="Text" id="amount"placeholder="" class="form-control" >
+									</div>
+								</div>
+								<div class="row  mt-4 mx-3" >   
+									<div class="col-6">
+										<label for="amount" class="form-label fw-bold">City</label>
+										<input type="Text" id="amount"placeholder="" class="form-control" >
+									</div>
+									<div class="col-3">
+										<label for="amount" class="form-label fw-bold">State</label>
+										<select class="form-select" aria-label="Default select example">
+											<option selected>Pick a state</option>
+										</select>
+									</div>
+									<div class="col-3">
+										<label for="amount" class="form-label fw-bold">Postal Code</label>
+										<input type="Text" id="amount"placeholder="" class="form-control" >
+									</div>
+								</div>
+								<div class="row  mt-4 mx-3" >   
+									<div class="col-6 ">
+										<label for="amount" class="form-label fw-bold">We accept :</label>
+										<div class="bg-secondary rounded py-2 w-50">
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+												<label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
+											</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+											<label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+											<label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-diners-club"></i></label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+											<label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-amex"></i></label>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<label for="amount" class="form-label fw-bold">Message </label>
+									<textarea class="form-control" ></textarea>
+									<p class="text-muted">Add any notes here </p>
+							
 						</div>
-						<div class="mb-3">
-							<label for="exampleInputPassword1" class="form-label">Password</label>
-							<input type="password" class="form-control" id="exampleInputPassword1">
-						</div>
-						<div class="mb-3 form-check">
-							<input type="checkbox" class="form-check-input" id="exampleCheck1">
-							<label class="form-check-label" for="exampleCheck1">Check me out</label>
-						</div>
+					</div>
 					
-					<div class="card-footer">
-						<button type="submit" class="btn btn-primary">Submit</button>
+					<div class="card-footer d-flex justify-content-end">
+						<button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+						<button class="btn btn-primary" type="button">Send</button>
 					</div>
 					</form>
 				</div>
